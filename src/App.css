@@ -1,6 +1,6 @@
-* {
+/* * {
   background-color: #f3f8f7;
-}
+} */
 .App {
   text-align: center;
 }
@@ -40,8 +40,35 @@
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #7D866B; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 
 /* Header Component */
+.headerComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 #nav {
   background-color: #7D866B;
   padding: 25px;
@@ -53,6 +80,34 @@
   text-decoration: none;
   background-color: #7D866B;
   color: white;
+  padding: 5px;
+  position: relative
+}
+
+.nav-links::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out; 
+  }
+
+.nav-links:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+
+#image{
+ margin: 5px;
+ position: relative;
+ top: 50px
 }
 
 header {
@@ -61,8 +116,9 @@ header {
   max-height: 900px;
   min-height: 700px; 
   width: 100%;
-  background: #090909
-    url('./header.gif')
+  background:
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2522584033613445) 0%),
+    url('./header.gif') 
     no-repeat center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
@@ -70,20 +126,33 @@ header {
 }
 
 .banner-text {
-  display: inline-block;
-  z-index: 1;
+
   text-align: center;
-  position: relative;
-  background-color: transparent;
   color: white;
+ position: relative
+
+}
+
+#social-header {
+  display: flex;
+ float: right;
+  list-style: none;
+  flex-direction: column;
 }
 
 .social-links{
   display: flex;
-  list-style: none;
-  flex-direction: row;
   justify-content: space-evenly;
-  background-color: transparent;
+  margin: 15px;
+  margin-right: 25px;
+}
+
+.social-links:hover{
+  animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.2);}
 }
 
 /* about */
@@ -98,9 +167,11 @@ header {
 }
 
 #paragraph {
-  background-color: #989684;
+ 
   margin: 15px;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
@@ -108,8 +179,34 @@ header {
 
 #contact-info {
   background-color: #B2AC9B;
+  color: white;
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
+
 
 #social {
   background-color: #BAB9AB;
+  padding: 10px;
+  
+}
+
+#social:hover{
+  transition: ease-in 0.5s;
+  background-color: #989684;
+}
+
+#footer-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }

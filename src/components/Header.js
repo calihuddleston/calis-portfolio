@@ -1,18 +1,21 @@
-// import headerImg from "../headerImg.png";
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import headerImg from "../images/portrait.jpg";
 
 export default class Header extends Component {
   render() {
     let personalData = this.props.personalData;
     return (
-      <div>
+      <div id="home">
         <nav id="nav">
           <a href="#home" className="nav-links">
             Home
           </a>
           <a href="#about" className="nav-links">
             About Me
+          </a>
+          <a href="#skills" className="nav-links">
+            Skills
           </a>
           <a href="#projects" className="nav-links">
             Projects
@@ -26,8 +29,12 @@ export default class Header extends Component {
         </nav>
 
         <header>
-          <h1 className="banner-text">Hello! I'm Cali</h1>
-          <ul className="social-links banner-text">
+          <div className="headerComponent">
+            <img src={headerImg} height="250px" width="250px" id="image"></img>
+            <h1 className="banner-text">{personalData.name}</h1>
+            <h3 className="banner-text">{personalData.role}</h3>
+          </div>
+          <ul id="social-header" className="banner-text">
             {personalData.socialLinks &&
               personalData.socialLinks.map((social) => {
                 return (
@@ -35,7 +42,7 @@ export default class Header extends Component {
                     <a href={social.url} target="_blank">
                       <FontAwesomeIcon
                         icon={social.icon}
-                        color="black"
+                        color="white"
                         size="2x"
                       />
                     </a>

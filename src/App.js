@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import personalData from "./personalData";
 import Header from "./components/Header";
 import About from "./components/About";
+import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <Header personalData={personalData} />
         <About personalData={personalData} />
+        <Portfolio personalData={personalData} />
         <Contact personalData={personalData} />
       </div>
     );

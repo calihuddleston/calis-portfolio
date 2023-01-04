@@ -175,9 +175,29 @@ header {
   
 }
 
+/* portfolio */
+#portfolio-section{
+  background-color: #989684;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+.portfolio-images {
+  width: 75%;
+}
+
+#project-list{
+  list-style: none;
+}
+
 /* contact */
 
-#contact-info {
+#contact-form {
   background-color: #B2AC9B;
   color: white;
   padding: 100px;
@@ -186,12 +206,17 @@ header {
   justify-content: space-evenly;
 }
 
-
+#contact-info {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 #social {
   background-color: #BAB9AB;
   padding: 10px;
-  
+  color: white;
 }
 
 #social:hover{
@@ -209,4 +234,35 @@ form{
   display: flex;
   flex-direction: column;
   padding: 20px;
+  width: 50%;
 }
+
+#first-name, #last-name, #email {
+  padding: 15px;
+  border-radius: 5px;
+  border-style: none;
+  margin: 5px;
+  
+}
+
+#message {
+  height: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  border-style: none;
+  margin: 5px;
+}
+
+#send-btn {
+  margin: 5px; 
+  width: 25%;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  border-style: none;
+  background-color: #7D866B;
+  color: white;
+}
+

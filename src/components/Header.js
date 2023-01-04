@@ -30,7 +30,13 @@ export default class Header extends Component {
 
         <header>
           <div className="headerComponent">
-            <img src={headerImg} height="250px" width="250px" id="image"></img>
+            <img
+              src={headerImg}
+              height="250px"
+              width="250px"
+              id="image"
+              alt="Self-portrait of me smiling with glasses on"
+            ></img>
             <h1 className="banner-text">{personalData.name}</h1>
             <h3 className="banner-text">{personalData.role}</h3>
           </div>
@@ -39,7 +45,7 @@ export default class Header extends Component {
               personalData.socialLinks.map((social) => {
                 return (
                   <li key={social.name} className="social-links">
-                    <a href={social.url} target="_blank">
+                    <a href={social.url} target="_blank" rel="noreferrer">
                       <FontAwesomeIcon
                         icon={social.icon}
                         color="white"

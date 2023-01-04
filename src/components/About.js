@@ -6,7 +6,7 @@ export default class About extends Component {
     let personalData = this.props.personalData;
     return (
       <div id="about">
-        <img src={aboutImg} height="500px"></img>
+        <img src={aboutImg} height="500px" alt="Cali sitting at a table outside, looking at laptop while coding"></img>
         <p id="paragraph">{personalData.about}</p>
       </div>
     );

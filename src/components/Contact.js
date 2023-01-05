@@ -7,6 +7,7 @@ export default class Contact extends Component {
     return (
       <div id="contact">
         <div id="contact-form">
+          <h1>Like what you see? Send me a message! 📨</h1>
           <form>
             <input type="text" placeholder="First Name" id="first-name"></input>
             <input type="text" placeholder="Last Name" id="last-name"></input>

@@ -37,8 +37,12 @@ export default class Header extends Component {
               id="image"
               alt="Self-portrait of me smiling with glasses on"
             ></img>
-            <h1 className="banner-text">{personalData.name}</h1>
-            <h3 className="banner-text">{personalData.role}</h3>
+            <h1 className="banner-text" id="name">
+              {personalData.name}
+            </h1>
+            <h3 className="banner-text" id="role">
+              {personalData.role}
+            </h3>
           </div>
           <ul id="social-header" className="banner-text">
             {personalData.socialLinks &&

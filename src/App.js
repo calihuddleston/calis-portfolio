@@ -5,13 +5,15 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Skills from "./components/Skills";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" id="scroll-container">
         <Header personalData={personalData} />
         <About personalData={personalData} />
+        <Skills personalData={personalData} />
         <Portfolio personalData={personalData} />
         <Contact personalData={personalData} />
       </div>

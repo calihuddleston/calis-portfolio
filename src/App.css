@@ -3,6 +3,8 @@
 } */
 .App {
   text-align: center;
+  scroll-behavior: smooth;
+  scroll-margin-top: 2em;
 }
 
 .App-logo {
@@ -47,17 +49,18 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #7D866B; 
+  background: white; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #B2AC9B; 
+  border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #7D866B; 
 }
 
 
@@ -74,6 +77,9 @@
   padding: 25px;
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  z-index:2;
 }
 
 .nav-links {
@@ -107,7 +113,7 @@
 #image{
  margin: 5px;
  position: relative;
- top: 50px
+ top: 90px
 }
 
 header {
@@ -126,11 +132,22 @@ header {
 }
 
 .banner-text {
-
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: white;
- position: relative
+  z-index: 1;
+  margin: 0;
+  position: relative;
+  top: 100px;
+  text-shadow: #555 1px 1px 2px;
+}
 
+#name{
+  font-size: 50px;
+}
+
+#role{
+  font-size: 25px;
 }
 
 #social-header {
@@ -158,7 +175,7 @@ header {
 /* about */
 
 #about {
-  background-color: #989684;
+  background-color: #989684 ;
   padding: 70px;
   line-height: 3rem;
   color: white;
@@ -175,26 +192,48 @@ header {
   
 }
 
+/* skills */
+#skill-section {
+  background-color: #7D866B;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+}
+
+#education{
+  margin: 0;
+}
+
+
 /* portfolio */
 #portfolio-section{
   background-color: #989684;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-
 }
 
 .portfolio-images {
   width: 75%;
 }
 
-#project-list{
-  list-style: none;
+.project-navBtns{
+  margin: 5px; 
+  width: 25%;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  border-style: none;
+  background-color: #7D866B;
+  color: white;
+  cursor: pointer;
 }
-
 /* contact */
 
 #contact-form {
@@ -202,8 +241,9 @@ header {
   color: white;
   padding: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-info {
@@ -264,5 +304,6 @@ form{
   border-style: none;
   background-color: #7D866B;
   color: white;
+  cursor: pointer;
 }
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Nanum+Myeongjo&display=swap');
 /* * {
   background-color: #f3f8f7;
 } */
@@ -87,7 +88,10 @@
   background-color: #7D866B;
   color: white;
   padding: 5px;
-  position: relative
+  position: relative;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .nav-links::before {
@@ -140,6 +144,8 @@ header {
   position: relative;
   top: 100px;
   text-shadow: #555 1px 1px 2px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 500;
 }
 
 #name{
@@ -181,15 +187,16 @@ header {
   color: white;
   display: flex;
   flex-direction: row;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 #paragraph {
- 
+  background-color: rgba(0, 0, 0, 0.083);
   margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  border-radius: 5px;
 }
 
 /* skills */
@@ -216,6 +223,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 .portfolio-images {
@@ -233,6 +241,7 @@ header {
   background-color: #7D866B;
   color: white;
   cursor: pointer;
+  font-family: 'EB Garamond', serif;
 }
 /* contact */
 
@@ -244,6 +253,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 #contact-info {
@@ -251,6 +261,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 #social {
@@ -282,7 +293,7 @@ form{
   border-radius: 5px;
   border-style: none;
   margin: 5px;
-  
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 #message {
@@ -291,6 +302,7 @@ form{
   border-radius: 5px;
   border-style: none;
   margin: 5px;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 #send-btn {
@@ -305,5 +317,6 @@ form{
   background-color: #7D866B;
   color: white;
   cursor: pointer;
+  font-family: 'EB Garamond', serif;
 }
 

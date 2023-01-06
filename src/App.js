@@ -6,6 +6,8 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
+import "swiper/css/bundle";
+import "./styles.css";
 
 class App extends Component {
   render() {

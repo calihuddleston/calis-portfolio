@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import headerImg from "../images/portrait.jpg";
 
 export default class Header extends Component {
   render() {
     let personalData = this.props.personalData;
+
     return (
       <div id="home">
         <nav id="nav">

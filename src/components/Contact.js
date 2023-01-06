@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Contact extends Component {
   render() {
     let personalData = this.props.personalData;
+
     return (
       <div id="contact">
         <div id="contact-form">

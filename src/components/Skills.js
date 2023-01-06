@@ -110,6 +110,7 @@ export default class Skills extends Component {
 
     return (
       <div id="skill-section">
+        <h2 id="skill-header">Education & Skillset</h2>
         {personalData.education &&
           personalData.education.map((item) => {
             return (
@@ -128,6 +129,7 @@ export default class Skills extends Component {
             nameKey="skillName"
             outerRadius={250}
             fill="green"
+            className="pie-data"
           >
             {skillData.map((entry, index) => (
               <Cell

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/calihuddleston.com/static/css/main.ff628ee3.css",
-    "main.js": "/calihuddleston.com/static/js/main.48c151c8.js",
-    "static/js/787.8bab0119.chunk.js": "/calihuddleston.com/static/js/787.8bab0119.chunk.js",
-    "static/media/portrait.jpg": "/calihuddleston.com/static/media/portrait.25ab9cf0c882f20778fc.jpg",
-    "static/media/header.gif": "/calihuddleston.com/static/media/header.1180232a3126f5bce0d2.gif",
-    "static/media/aboutImg.jpg": "/calihuddleston.com/static/media/aboutImg.43e6d72b0167f15f0408.jpg",
-    "static/media/skills.jpg": "/calihuddleston.com/static/media/skills.e5b53ab6b8048fb7246e.jpg",
-    "index.html": "/calihuddleston.com/index.html",
-    "main.ff628ee3.css.map": "/calihuddleston.com/static/css/main.ff628ee3.css.map",
-    "main.48c151c8.js.map": "/calihuddleston.com/static/js/main.48c151c8.js.map",
-    "787.8bab0119.chunk.js.map": "/calihuddleston.com/static/js/787.8bab0119.chunk.js.map"
+    "main.css": "/calihuddleston.github.io/calis-portfolio/static/css/main.c9ddca71.css",
+    "main.js": "/calihuddleston.github.io/calis-portfolio/static/js/main.2b9e7ce2.js",
+    "static/js/787.8bab0119.chunk.js": "/calihuddleston.github.io/calis-portfolio/static/js/787.8bab0119.chunk.js",
+    "static/media/portrait.jpg": "/calihuddleston.github.io/calis-portfolio/static/media/portrait.25ab9cf0c882f20778fc.jpg",
+    "static/media/header.gif": "/calihuddleston.github.io/calis-portfolio/static/media/header.1180232a3126f5bce0d2.gif",
+    "static/media/aboutImg.jpg": "/calihuddleston.github.io/calis-portfolio/static/media/aboutImg.43e6d72b0167f15f0408.jpg",
+    "static/media/skills.jpg": "/calihuddleston.github.io/calis-portfolio/static/media/skills.e5b53ab6b8048fb7246e.jpg",
+    "index.html": "/calihuddleston.github.io/calis-portfolio/index.html",
+    "main.c9ddca71.css.map": "/calihuddleston.github.io/calis-portfolio/static/css/main.c9ddca71.css.map",
+    "main.2b9e7ce2.js.map": "/calihuddleston.github.io/calis-portfolio/static/js/main.2b9e7ce2.js.map",
+    "787.8bab0119.chunk.js.map": "/calihuddleston.github.io/calis-portfolio/static/js/787.8bab0119.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff628ee3.css",
-    "static/js/main.48c151c8.js"
+    "static/css/main.c9ddca71.css",
+    "static/js/main.2b9e7ce2.js"
   ]
 }

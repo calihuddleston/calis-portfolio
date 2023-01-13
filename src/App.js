@@ -9,6 +9,9 @@ import Skills from "./components/Skills";
 
 class App extends Component {
   render() {
+    window.alert(
+      "This site is still being developed. Would you like to continue?"
+    );
     return (
       <div className="App" id="scroll-container">
         <Header personalData={personalData} />

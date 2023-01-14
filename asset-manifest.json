@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/calis-portfolio/static/css/main.e7f35371.css",
-    "main.js": "/calis-portfolio/static/js/main.ecbe91da.js",
-    "static/js/787.8bab0119.chunk.js": "/calis-portfolio/static/js/787.8bab0119.chunk.js",
-    "static/media/portrait.jpg": "/calis-portfolio/static/media/portrait.25ab9cf0c882f20778fc.jpg",
-    "static/media/header.gif": "/calis-portfolio/static/media/header.1180232a3126f5bce0d2.gif",
-    "static/media/aboutImg.jpg": "/calis-portfolio/static/media/aboutImg.43e6d72b0167f15f0408.jpg",
-    "static/media/skills.jpg": "/calis-portfolio/static/media/skills.e5b53ab6b8048fb7246e.jpg",
-    "index.html": "/calis-portfolio/index.html",
-    "main.e7f35371.css.map": "/calis-portfolio/static/css/main.e7f35371.css.map",
-    "main.ecbe91da.js.map": "/calis-portfolio/static/js/main.ecbe91da.js.map",
-    "787.8bab0119.chunk.js.map": "/calis-portfolio/static/js/787.8bab0119.chunk.js.map"
+    "main.css": "/calihuddleston.com/static/css/main.ff628ee3.css",
+    "main.js": "/calihuddleston.com/static/js/main.bf6328f7.js",
+    "static/js/787.8bab0119.chunk.js": "/calihuddleston.com/static/js/787.8bab0119.chunk.js",
+    "static/media/portrait.jpg": "/calihuddleston.com/static/media/portrait.25ab9cf0c882f20778fc.jpg",
+    "static/media/header.gif": "/calihuddleston.com/static/media/header.1180232a3126f5bce0d2.gif",
+    "static/media/aboutImg.jpg": "/calihuddleston.com/static/media/aboutImg.43e6d72b0167f15f0408.jpg",
+    "static/media/skills.jpg": "/calihuddleston.com/static/media/skills.e5b53ab6b8048fb7246e.jpg",
+    "index.html": "/calihuddleston.com/index.html",
+    "main.ff628ee3.css.map": "/calihuddleston.com/static/css/main.ff628ee3.css.map",
+    "main.bf6328f7.js.map": "/calihuddleston.com/static/js/main.bf6328f7.js.map",
+    "787.8bab0119.chunk.js.map": "/calihuddleston.com/static/js/787.8bab0119.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7f35371.css",
-    "static/js/main.ecbe91da.js"
+    "static/css/main.ff628ee3.css",
+    "static/js/main.bf6328f7.js"
   ]
 }

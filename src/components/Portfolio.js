@@ -20,7 +20,7 @@
 //   );
 // }
 
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import { projectData } from "../projectData.js";
 
 export default function Portfolio() {
@@ -47,7 +47,9 @@ export default function Portfolio() {
       <div class="blog">
         <div className="title-box">
           <h3 className="title">{project.name}</h3>
+
           <hr />
+          <div className="info">{project.description}</div>
           <div className="intro">
             {project.techUsed}
             <a href={project.repositoryLink}>
@@ -56,23 +58,15 @@ export default function Portfolio() {
           </div>
         </div>
 
-        {/* <div className="info">
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim.
-          </span>
-        </div> */}
+        <div id="image-row">
+          <button onClick={handleBackClick} id="project-button">
+            Back
+          </button>
 
-        <div>
           <img src={project.image} width="55%" className="project-image"></img>
-        </div>
-        <div className="overlay">
-          {project.description} Hi this is my overlay
-        </div>
-        <div>
-          <button onClick={handleBackClick}>Back</button>
-          <button onClick={handleClick}>Next</button>
+          <button onClick={handleClick} id="project-button">
+            Next
+          </button>
         </div>
       </div>
     </>

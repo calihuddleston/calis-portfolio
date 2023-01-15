@@ -1,27 +1,46 @@
 import "./App.css";
-import React, { Component } from "react";
+import React, { Suspense, useState } from "react";
+import { ProgressBar } from "react-loader-spinner";
 import personalData from "./personalData";
 import Header from "./components/Header";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
-import Skills from "./components/Skills";
+const About = React.lazy(() => import("./components/About"));
+const Skills = React.lazy(() => import("./components/Skills"));
+const Portfolio = React.lazy(() => import("./components/Portfolio"));
+const Contact = React.lazy(() => import("./components/Contact"));
 
-class App extends Component {
-  render() {
-    window.alert(
-      "This site is still being developed. Would you like to continue?"
-    );
-    return (
-      <div className="App" id="scroll-container">
+export default function App() {
+  window.alert(
+    "This site is still being developed. Would you like to continue?"
+  );
+  const style = {
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+  };
+  return (
+    <div className="App" id="scroll-container">
+      <Suspense
+        fallback={
+          <div style={style}>
+            <ProgressBar
+              height="300"
+              width=""
+              ariaLabel="progress-bar-loading"
+              wrapperStyle={{}}
+              wrapperClass="progress-bar-wrapper"
+              borderColor="#7D866B"
+              barColor="#989684"
+            />
+          </div>
+        }
+      >
         <Header personalData={personalData} />
         <About personalData={personalData} />
         <Skills personalData={personalData} />
         <Portfolio personalData={personalData} />
         <Contact personalData={personalData} />
-      </div>
-    );
-  }
+      </Suspense>
+    </div>
+  );
 }
-
-export default App;

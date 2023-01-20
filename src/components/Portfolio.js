@@ -22,6 +22,7 @@
 
 import React, { useState } from "react";
 import { projectData } from "../projectData.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Portfolio() {
   const [index, setIndex] = useState(0);
@@ -43,7 +44,7 @@ export default function Portfolio() {
 
   let project = projectData[index];
   return (
-    <>
+    <div id="projects">
       <div class="blog">
         <div className="title-box">
           <h3 className="title">{project.name}</h3>
@@ -59,16 +60,16 @@ export default function Portfolio() {
         </div>
 
         <div id="image-row">
-          <button onClick={handleBackClick} id="project-button">
-            Back
+          <button onClick={handleBackClick} className="project-button">
+            ⪡
           </button>
 
           <img src={project.image} width="55%" className="project-image"></img>
-          <button onClick={handleClick} id="project-button">
-            Next
+          <button onClick={handleClick} className="project-button">
+            ⪢
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }

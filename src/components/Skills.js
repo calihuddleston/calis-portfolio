@@ -109,8 +109,7 @@ export default class Skills extends Component {
     ];
 
     return (
-      <div id="skill-section">
-        <h2 id="skill-header">Education & Skillset</h2>
+      <div id="skills">
         {personalData.education &&
           personalData.education.map((item) => {
             return (

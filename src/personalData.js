@@ -11,10 +11,10 @@ import {
 let personalData = {
   name: "Cali Huddleston",
   role: "Full Stack Developer",
-  resume: "",
+  resume: "/images/portfolio-resume.pdf",
   linkedIn: "cali-huddleston",
   github: "calihuddleston",
-  instagram: "calijox",
+  instagram: "coding.momma",
   discord: "coding.momma#2209",
   twitter: "",
   pinterest: "",
@@ -75,8 +75,6 @@ let personalData = {
       image: "/images/msu.png",
     },
   ],
-
-  experience: [],
 };
 
 export default personalData;

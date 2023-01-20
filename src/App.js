@@ -6,6 +6,7 @@ import Header from "./components/Header";
 const About = React.lazy(() => import("./components/About"));
 const Skills = React.lazy(() => import("./components/Skills"));
 const Portfolio = React.lazy(() => import("./components/Portfolio"));
+const Resume = React.lazy(() => import("./components/Resume"));
 const Contact = React.lazy(() => import("./components/Contact"));
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
         <About personalData={personalData} />
         <Skills personalData={personalData} />
         <Portfolio personalData={personalData} />
+        <Resume />
         <Contact personalData={personalData} />
       </Suspense>
     </div>

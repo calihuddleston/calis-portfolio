@@ -18,7 +18,7 @@ export default class Contact extends Component {
               placeholder="Type your message here..."
               id="message"
             ></textarea>
-            <button id="send-btn">Send</button>
+            <button id="send-btn">Send 📮</button>
           </form>
         </div>
 
@@ -28,7 +28,9 @@ export default class Contact extends Component {
             <h4>{personalData.phone}</h4>
             <h4>{personalData.address}</h4>
           </div>
-          <h5>Thank you for taking the time to look at my portfolio.</h5>
+          <h5 id="thank-you">
+            Thank you for taking the time to look at my portfolio. ❤️
+          </h5>
           <ul id="footer-social">
             {personalData.socialLinks &&
               personalData.socialLinks.map((social) => {

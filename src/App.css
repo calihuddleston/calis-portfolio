@@ -406,6 +406,13 @@ header {
   justify-content: space-evenly;
 }
 
+.footer-links{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px;
+  margin-right: 25px;
+}
+
 form{
   display: flex;
   flex-direction: column;

@@ -72,7 +72,7 @@ export default function Contact() {
           {personalData.socialLinks &&
             personalData.socialLinks.map((social) => {
               return (
-                <li key={social.name} className="social-links">
+                <li key={social.name} className="footer-links">
                   <a href={social.url} target="_blank" rel="noreferrer">
                     <FontAwesomeIcon
                       icon={social.icon}

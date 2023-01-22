@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 /* * {
   background-color: #f3f8f7;
 } */
@@ -199,6 +200,45 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  padding: 20px;
+}
+
+/* services */
+#services{
+  background-color: #BAB9AB;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'EB Garamond', serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  background-color:#9896846f;
+  border-radius: 5px;
+  
+  margin: 50px;
+  padding: 5px;
+}
+
+.bg-change{
+  background-color: #7D866B;
+  padding: 10px;
+  border-radius: 2px;
+  border: dotted white 1px;
+}
+
+.service-list{
+  list-style: none;
+}
+
+#best-value{
+  background-color: #fb6161;
+  font-size: 25px;
+  font-family: 'Fira Sans', sans-serif;
+  border-radius: 2px;
 }
 
 /* skills */

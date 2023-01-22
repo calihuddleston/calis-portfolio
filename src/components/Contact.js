@@ -1,9 +1,30 @@
-import React, { Component, useRef } from "react";
+import React, { Component, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "@emailjs/browser";
 import personalData from "../personalData";
 
 export default function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    if (inputType === "first_name") {
+      setFirstName(inputValue);
+    } else if (inputType === "last_name") {
+      setLastName(inputValue);
+    } else if (inputType === "reply_to") {
+      setEmail(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,6 +45,12 @@ export default function Contact() {
           console.log(error.text);
         }
       );
+
+    alert("Message sent!");
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -36,24 +63,32 @@ export default function Contact() {
             placeholder="First Name"
             id="first-name"
             name="first_name"
+            value={firstName}
+            onChange={handleInputChange}
           ></input>
           <input
             type="text"
             placeholder="Last Name"
             id="last-name"
             name="last_name"
+            value={lastName}
+            onChange={handleInputChange}
           ></input>
           <input
             type="email"
             placeholder="Email"
             id="email"
             name="reply_to"
+            value={email}
+            onChange={handleInputChange}
           ></input>
           <textarea
             type="text"
             placeholder="Type your message here..."
             id="message"
             name="message"
+            value={message}
+            onChange={handleInputChange}
           ></textarea>
           <input id="send-btn" type="submit" value="Send 📮"></input>
         </form>

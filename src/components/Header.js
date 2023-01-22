@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import headerImg from "../images/portrait.jpg";
+import headerImg from "../images/portrait.png";
 
 export default class Header extends Component {
   render() {
@@ -14,6 +14,9 @@ export default class Header extends Component {
           </a>
           <a href="#about" className="nav-links">
             About Me
+          </a>
+          <a href="#services" className="nav-links">
+            Services
           </a>
           <a href="#skills" className="nav-links">
             Skills
@@ -33,17 +36,10 @@ export default class Header extends Component {
           <div className="headerComponent">
             <img
               src={headerImg}
-              height="250px"
-              width="250px"
+              width="450px"
               id="image"
               alt="Self-portrait of me smiling with glasses on"
             ></img>
-            <h1 className="banner-text" id="name">
-              {personalData.name}
-            </h1>
-            <h3 className="banner-text" id="role">
-              {personalData.role}
-            </h3>
           </div>
           <ul id="social-header" className="banner-text">
             {personalData.socialLinks &&

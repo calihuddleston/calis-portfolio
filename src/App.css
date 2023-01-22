@@ -66,6 +66,7 @@
 }
 
 /* Header Component */
+
 #nav {
   background-color: #7D866B;
   padding: 25px;
@@ -107,13 +108,6 @@
   transform: scaleX(1);
 }
 
-
-#image{
- margin: 5px;
- position: relative;
- top: 90px
-}
-
 header {
   position: relative;
   height: 900px;
@@ -127,6 +121,18 @@ header {
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
+}
+
+.headerComponent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center;
+}
+
+#image{
+  position: relative;
+  top: 100px;
 }
 
 .banner-text {
@@ -162,6 +168,8 @@ header {
   justify-content: space-evenly;
   margin: 15px;
   margin-right: 25px;
+  position: relative;
+  bottom: 250px;
 }
 
 .social-links:hover{
@@ -216,13 +224,14 @@ header {
 #education{
   margin: 0;
   font-family: 'Nanum Myeongjo', serif ;
-  background-color: #7d866b7d;
+  background-color: #7d866ba1;
   padding: 100px;
   border-radius: 10px;
 }
 
-#pie {
-  background-color: #7d866b7d;
+#skillsImg {
+  padding: 37px;
+  background-color: #7d866ba1;
   border-radius: 10px;
 }
 

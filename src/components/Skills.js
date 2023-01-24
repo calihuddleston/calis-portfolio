@@ -11,7 +11,7 @@ export default class Skills extends Component {
           personalData.education.map((item) => {
             return (
               <div id="education">
-                <img src={item.image}></img>
+                <img src={item.image} id="education-image"></img>
                 <h2>{item.name}</h2>
                 <h3>{item.course}</h3>
                 <h3>{item.dateOfGraduation}</h3>
@@ -19,7 +19,7 @@ export default class Skills extends Component {
             );
           })}
         <div id="skillsImg">
-          <img src={skillsImg}></img>
+          <img src={skillsImg} id="skill-image"></img>
         </div>
       </div>
     );

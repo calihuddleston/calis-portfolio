@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Nanum+Myeongjo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/brittany-signature');
+@import url('https://fonts.cdnfonts.com/css/caladea');
 /* * {
   background-color: #f3f8f7;
 } */
@@ -85,17 +85,17 @@
   color: white;
   padding: 5px;
   position: relative;
-  font-family: 'EB Garamond', serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-family: 'Brittany Signature', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .nav-links::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 2px;
-    border-radius: 4px;
+    height: 1px;
+    border-radius: 2px;
     background-color: white;
     bottom: 0;
     left: 0;
@@ -145,16 +145,8 @@ header {
   position: relative;
   top: 100px;
   text-shadow: #555 1px 1px 2px;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Caladea', sans-serif;
   font-weight: 500;
-}
-
-#name{
-  font-size: 50px;
-}
-
-#role{
-  font-size: 25px;
 }
 
 #social-header {
@@ -173,12 +165,21 @@ header {
   bottom: 250px;
 }
 
-.social-links:hover{
-  animation: pop 0.3s linear 1;
+.social-links{
+  animation: bounce-in 1s linear 1;
 }
 
-@keyframes pop{
-  50%  {transform: scale(1.2);}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.10);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
 }
 
 /* about */
@@ -190,7 +191,7 @@ header {
   color: white;
   display: flex;
   flex-direction: row;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #paragraph {
@@ -205,14 +206,26 @@ header {
 
 /* services */
 #services{
-  background-color: #BAB9AB;
-  color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  font-family: 'EB Garamond', serif;
   justify-content: center;
   align-items: center;
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Caladea', sans-serif;
+  background-color: #BAB9AB;
+  color: white;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
+.service-title{
+  font-family: 'Brittany Signature', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
 }
 
 .card{
@@ -237,8 +250,46 @@ header {
 #best-value{
   background-color: #fb6161;
   font-size: 25px;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Caladea', sans-serif;
   border-radius: 2px;
+}
+
+#more{
+  font-size: 23px;
+  background-color: #7d866ba1;
+  border-radius: 25px;
+  padding-bottom: 15px;
+  border: dotted white 2px;
+}
+
+span{
+  font-family: 'Brittany Signature', sans-serif;
+  font-size: 28px;
+  color: rgb(235, 82, 107)
+}
+
+#contact-link-down{
+  color: white;
+  font-size: 40px;
+  
+}
+
+#bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
+}
+
+details {
+  display: contents;
 }
 
 /* skills */
@@ -258,12 +309,12 @@ header {
 #skill-header{
   rotate: 270deg;
   font-size: 40px;
-  font-family: 'EB Garamond', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #education{
   margin: 0;
-  font-family: 'Nanum Myeongjo', serif ;
+  font-family: 'Caladea', sans-serif;
   background-color: #7d866ba1;
   padding: 100px;
   border-radius: 10px;
@@ -283,10 +334,8 @@ header {
   margin: auto;
   overflow: hidden;
   color: white;
-  background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 0.348) 0%),
-  url(./images/skills.jpg) no-repeat;
-  background-size: cover;  
-  font-family: Roboto, veranda;
+  background-color: #BAB9AB; 
+  font-family: 'Caladea', sans-serif;
   padding-bottom: 4em;
 }
 
@@ -312,15 +361,16 @@ header {
    font-weight: 500;
    letter-spacing: 2px;
    font-size: 2.4em;
-   font-family: 'EB Garamond', serif;
+   font-family: 'Brittany Signature', sans-serif;
    text-align: center;
+   color: white
 }
 
 .intro{
   width: 100%;
   margin: 0 auto;
   color: white;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Caladea', sans-serif;
   font-size: 20px;
   font-style: italic;
   line-height: 18px;
@@ -373,12 +423,18 @@ header {
 }
 
 #positions{
-  font-family: 'Nanum Myeongjo', serif ;
+  font-family: 'Caladea', sans-serif;
   background: #7d866b7d;
   padding: 15px;
   border-radius: 10px;
   border-style: dotted 2px white;
   margin: 25px;
+}
+
+.position-title{
+  font-family: 'Brittany Signature', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
 }
 
 #margin-top{
@@ -403,6 +459,11 @@ header {
   font-size: 20px;
 }
 
+#download-icon{
+  margin: 2px;
+  font-size: 25px;
+}
+
 /* contact */
 
 #contact-form {
@@ -413,7 +474,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #contact-info {
@@ -421,12 +482,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #thank-you{
   font-size: 15px;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #social {
@@ -465,7 +526,7 @@ form{
   border-radius: 5px;
   border-style: none;
   margin: 5px;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #message {
@@ -474,7 +535,7 @@ form{
   border-radius: 5px;
   border-style: none;
   margin: 5px;
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Caladea', sans-serif;
 }
 
 #send-btn, #resume-download {
@@ -489,13 +550,112 @@ form{
   background-color: #7D866B;
   color: white;
   cursor: pointer;
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
+  font-family: 'Brittany Signature', sans-serif;
+  font-size: 23px;
 }
 
 @media screen and (max-width: 750px) {
-  .nav-links {
+  .nav-links, .social-links, #about-img {
     display: none;
+  }
+  header {
+    height: 150px;
+    max-height: 150px;
+  }
+  #image{
+    width: 400px;
+  }
+  #about {
+    line-height: 1.5rem;
+    padding: 15px
+  }
+  #paragraph{
+    padding: 2px;
+  }
+  #services{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 5px;
+  }
+  details {
+    display: contents;
+  }
+  #skills{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #education-image{
+    width: 175px;
+  }
+  #education{
+    padding: 5px;
+    font-size: 15px;
+    margin: 10px;
+  }
+  #skill-image{
+    width: 200px;
+  }
+  .project-image{
+    width: 300px;
+  }
+  .project-button{
+    font-size: 10px;
+  }
+  #experience{
+    padding: 20px
+  }
+  #positions{
+    margin: 0px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+  }
+  .company-image{
+    width: 400px;
+  }
+  #margin-top{
+    width: 200px;
+  }
+  .position-title{
+    font-size: 25px;
+    margin-bottom: -10px;
+  }
+  .desc-list{
+    margin-top: -5px;
+    font-size: 10px;
+    position: relative;
+    right: 15px;
+  }
+  #resume-download {
+    font-size: 20px;
+    width: 250px;
+    padding: 15px;
+  }
+  #contact-form {
+    font-size: 15px;
+    padding: 25px
+  }
+  form{
+    width: 325px;
+  }
+  #send-btn{
+    width: 150px;
+  }
+  #contact-info{
+    display: flex;
+    flex-direction: column;
+    margin: -25px;
+  }
+  .footer-links{
+    margin: 2px;
+    position: relative;
+    right: 15px;
   }
 }
 

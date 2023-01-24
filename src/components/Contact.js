@@ -2,12 +2,14 @@ import React, { Component, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "@emailjs/browser";
 import personalData from "../personalData";
+import { BiMailSend } from "react-icons/bi";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -56,7 +58,9 @@ export default function Contact() {
   return (
     <div id="contact">
       <div id="contact-form">
-        <h1>Like what you see? Send me a message! 📨</h1>
+        <h1>
+          Like what you see? Send me a message! <BiMailSend />
+        </h1>
         <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
@@ -96,13 +100,13 @@ export default function Contact() {
 
       <footer id="social">
         <div id="contact-info">
-          <h4>{personalData.email}</h4>
-          <h4>{personalData.phone}</h4>
-          <h4>{personalData.address}</h4>
+          <p>{personalData.email}</p>
+          <p>{personalData.phone}</p>
+          <p>{personalData.address}</p>
         </div>
-        <h5 id="thank-you">
+        <p id="thank-you">
           Thank you for taking the time to look at my portfolio. ❤️
-        </h5>
+        </p>
         <ul id="footer-social">
           {personalData.socialLinks &&
             personalData.socialLinks.map((social) => {

@@ -10,6 +10,7 @@ export default class About extends Component {
           src={aboutImg}
           height="500px"
           alt="Cali sitting at a table outside, looking at laptop while coding"
+          id="about-img"
         ></img>
         <p id="paragraph">{personalData.about}</p>
       </div>

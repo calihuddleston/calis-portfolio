@@ -17,7 +17,7 @@ export const projectData = [
     gifs: [],
   },
   {
-    name: "README File Generator",
+    name: "Read Me File Generator",
     image: "/images/README.png",
     description: "",
     repositoryLink: "https://github.com/calihuddleston/README-File-Generator",
@@ -33,7 +33,7 @@ export const projectData = [
     gifs: [],
   },
   {
-    name: "Social Media API",
+    name: "Social Media Api",
     image: "/images/social-media.png",
     description: "",
     repositoryLink: "https://github.com/calihuddleston/social-media",

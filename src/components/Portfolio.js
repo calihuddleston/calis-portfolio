@@ -22,7 +22,7 @@
 
 import React, { useState } from "react";
 import { projectData } from "../projectData.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
 export default function Portfolio() {
   const [index, setIndex] = useState(0);
@@ -61,12 +61,12 @@ export default function Portfolio() {
 
         <div id="image-row">
           <button onClick={handleBackClick} className="project-button">
-            ⪡
+            <MdOutlineArrowBackIosNew />
           </button>
 
           <img src={project.image} width="55%" className="project-image"></img>
           <button onClick={handleClick} className="project-button">
-            ⪢
+            <MdArrowForwardIos />
           </button>
         </div>
       </div>

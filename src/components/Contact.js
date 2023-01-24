@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from "@emailjs/browser";
 import personalData from "../personalData";
 import { BiMailSend } from "react-icons/bi";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");
@@ -107,6 +108,12 @@ export default function Contact() {
         <p id="thank-you">
           Thank you for taking the time to look at my portfolio. ❤️
         </p>
+        <div id="back-up">
+          <p>Would you like to go back up? </p>
+          <a href="#home" id="smooth-scroll-up">
+            <BsFillArrowUpCircleFill />
+          </a>
+        </div>
         <ul id="footer-social">
           {personalData.socialLinks &&
             personalData.socialLinks.map((social) => {

@@ -1,6 +1,7 @@
 import React, { Component, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import headerImg from "../images/portrait.png";
+import { AiFillDownCircle } from "react-icons/ai";
 
 export default class Header extends Component {
   render() {
@@ -40,6 +41,9 @@ export default class Header extends Component {
               id="image"
               alt="Self-portrait of me smiling with glasses on"
             ></img>
+            <a href="#about" id="smooth-scroll-down">
+              <AiFillDownCircle />
+            </a>
           </div>
           <ul id="social-header" className="banner-text">
             {personalData.socialLinks &&

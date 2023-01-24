@@ -10,7 +10,7 @@ export default function Services() {
           <img src={servicesImg} width="350px"></img>
           <div className="bg-change">
             <h2 className="service-title">Landing/Brochure Page</h2>
-            <h3>$50/Mo. or $500/Yr.</h3>
+            <h3>$35/Mo. or $500/Yr.</h3>
             <details>
               <div className="details">
                 <p>Includes:</p>

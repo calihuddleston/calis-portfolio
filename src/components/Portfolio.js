@@ -61,11 +61,16 @@ export default function Portfolio() {
             <div id="bunni-images">
               <img
                 src={bunniCover}
-                width="550px"
+                width="575px"
                 className="bunni"
                 id="change-size"
               ></img>
-              <img src={bunniGif} width="250px" className="bunni"></img>
+              <img
+                src={bunniGif}
+                width="325px"
+                className="bunni"
+                id="change-size"
+              ></img>
               <img src={bunniMenu} width="250px" className="bunni"></img>
             </div>
           </div>

@@ -378,7 +378,6 @@ details {
 }
 
 .intro{
-  width: 100%;
   margin: 0 auto;
   color: white;
   font-family: 'Caladea', sans-serif;
@@ -387,6 +386,15 @@ details {
   line-height: 18px;
   display: flex;
   flex-direction: column;
+  background-color: #282c3458;
+  position: relative;
+  bottom: 205px;
+  padding: 40px;
+  width: 79%;
+}
+
+.intro:hover{
+  background-color: #282c34ba;
 }
 
 .project-repo {
@@ -397,17 +405,8 @@ details {
 
 .project-image {
   position: relative;
-  margin: 20px
-}
-
-.project-image .overlay {
-  position: absolute;
-  bottom: 20px;
-  right: 15px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 30px;
-  background-color: black;
+  height: auto;
+  height: 150%;
 }
 
 #image-row{
@@ -417,19 +416,32 @@ details {
   align-items: center;
 }
 
+#image-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .project-button{
   background-color: transparent;
   color: white;
   border-style: none;
   border-radius: 5px;
-  font-size: 70px;
+  font-size: 50px;
   cursor: pointer;
+  position: relative;
+  bottom: 100px;
 }
 
 #web, #graphic{
   border-bottom: dotted white 1px;
   font-family: 'Brittany Signature', sans-serif;
   /* width: 100%; */
+}
+
+#graphic-design {
+  margin-top: -170px;
 }
 
 #bunnis-kitchen {
@@ -678,6 +690,13 @@ form{
   }
   .project-button{
     font-size: 10px;
+  }
+  .intro{
+    padding: 5px;
+    bottom: 68px;
+    width: 97%;
+    font-size: 7px;
+    line-height: 0%;
   }
   #experience{
     padding: 20px

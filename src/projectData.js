@@ -11,7 +11,8 @@ export const projectData = [
   {
     name: "Note Taker",
     image: "/images/NoteTaker.png",
-    description: "",
+    description:
+      "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/Note-Taker",
     techUsed: ["Bootstrap, JSON, Node.js, Express.js"],
     gifs: [],
@@ -19,7 +20,8 @@ export const projectData = [
   {
     name: "Read Me File Generator",
     image: "/images/README.png",
-    description: "",
+    description:
+      "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/README-File-Generator",
     techUsed: ["Node.js, Inquirer.js"],
     gifs: [],
@@ -27,7 +29,8 @@ export const projectData = [
   {
     name: "Park Me",
     image: "/images/parkme.png",
-    description: "",
+    description:
+      "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/park-me",
     techUsed: ["HTML5, Tailwind, Google REST API, JSON"],
     gifs: [],
@@ -35,7 +38,8 @@ export const projectData = [
   {
     name: "Social Media Api",
     image: "/images/social-media.png",
-    description: "",
+    description:
+      "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/social-media",
     techUsed: ["Node.js, Express.js, MongoDB, Nodemon"],
     gifs: [],

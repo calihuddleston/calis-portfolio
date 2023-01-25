@@ -32,25 +32,31 @@ export default function Portfolio() {
         </h1>
         <div className="title-box">
           <h3 className="title">{project.name}</h3>
-          <div className="intro">
-            {project.techUsed}
-            <a href={project.repositoryLink}>
-              <i className="fa fa-github project-repo"></i>
-            </a>
-          </div>
         </div>
 
         <div id="image-row">
           <button onClick={handleBackClick} className="project-button">
             <MdOutlineArrowBackIosNew />
           </button>
-
-          <img src={project.image} width="55%" className="project-image"></img>
+          <div id="image-column">
+            <img
+              src={project.image}
+              width="85%"
+              className="project-image"
+            ></img>
+            <div className="intro overlay">
+              {project.techUsed}
+              <a href={project.repositoryLink}>
+                <i className="fa fa-github project-repo"></i>
+              </a>
+              <p>{project.description}</p>
+            </div>
+          </div>
           <button onClick={handleClick} className="project-button">
             <MdArrowForwardIos />
           </button>
         </div>
-        <div>
+        <div id="graphic-design">
           <h1 className="title" id="graphic">
             Graphic Design:
           </h1>

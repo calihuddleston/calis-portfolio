@@ -253,20 +253,22 @@ header {
 .card{
   background-color:#9896846f;
   border-radius: 5px;
-  
-  margin: 50px;
+  margin: 30px;
   padding: 5px;
 }
 
 .bg-change{
   background-color: #7D866B;
-  padding: 10px;
   border-radius: 2px;
   border: dotted white 1px;
 }
 
 .service-list{
   list-style: none;
+  text-align: center;
+  position: relative;
+  right: 20px;
+  margin-top: -10px;
 }
 
 #best-value{
@@ -282,6 +284,10 @@ header {
   border-radius: 25px;
   padding-bottom: 15px;
   border: dotted white 2px;
+}
+
+details {
+  cursor: pointer;
 }
 
 span{

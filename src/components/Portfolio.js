@@ -1,28 +1,9 @@
-//
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// export default function Portfolio() {
-
-//   let project = projectData;
-//   return (
-
-//       <h2>Take a look at some of my work</h2>
-
-//       <h4>{project.name}</h4>
-//       <h5>Technology Used: {project.techUsed}</h5>
-//       <button onClick={handleBackClick} className="project-navBtns">
-//         Back
-//       </button>
-//       <button onClick={handleClick} className="project-navBtns">
-//         Next
-//       </button>
-//     </div>
-//   );
-// }
-
 import React, { useState } from "react";
 import { projectData } from "../projectData.js";
 import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import bunniGif from "../images/bunnigif.png";
+import bunniCover from "../images/bunnicover.png";
+import bunniMenu from "../images/bunnimenu.png";
 
 export default function Portfolio() {
   const [index, setIndex] = useState(0);
@@ -46,11 +27,11 @@ export default function Portfolio() {
   return (
     <div id="projects">
       <div class="blog">
+        <h1 className="title" id="web">
+          Web Development:
+        </h1>
         <div className="title-box">
           <h3 className="title">{project.name}</h3>
-
-          <hr />
-          <div className="info">{project.description}</div>
           <div className="intro">
             {project.techUsed}
             <a href={project.repositoryLink}>
@@ -68,6 +49,26 @@ export default function Portfolio() {
           <button onClick={handleClick} className="project-button">
             <MdArrowForwardIos />
           </button>
+        </div>
+        <div>
+          <h1 className="title" id="graphic">
+            Graphic Design:
+          </h1>
+          <div id="bunnis-kitchen">
+            <h2 className="title" id="bunni-title">
+              Bunni's Kitchen
+            </h2>
+            <div id="bunni-images">
+              <img
+                src={bunniCover}
+                width="550px"
+                className="bunni"
+                id="change-size"
+              ></img>
+              <img src={bunniGif} width="250px" className="bunni"></img>
+              <img src={bunniMenu} width="250px" className="bunni"></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>

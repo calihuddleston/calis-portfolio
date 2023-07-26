@@ -6,7 +6,6 @@ export const projectData = [
       "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/site-accessibility",
     techUsed: ["HTML5, CSS3"],
-    gifs: [],
   },
   {
     name: "Note Taker",
@@ -15,7 +14,6 @@ export const projectData = [
       "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/Note-Taker",
     techUsed: ["Bootstrap, JSON, Node.js, Express.js"],
-    gifs: [],
   },
   {
     name: "Read Me File Generator",
@@ -24,7 +22,6 @@ export const projectData = [
       "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/README-File-Generator",
     techUsed: ["Node.js, Inquirer.js"],
-    gifs: [],
   },
   {
     name: "Park Me",
@@ -33,7 +30,6 @@ export const projectData = [
       "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/park-me",
     techUsed: ["HTML5, Tailwind, Google REST API, JSON"],
-    gifs: [],
   },
   {
     name: "Social Media Api",
@@ -42,6 +38,5 @@ export const projectData = [
       "Increasing webpages search engine optimization by using semantic HTML.",
     repositoryLink: "https://github.com/calihuddleston/social-media",
     techUsed: ["Node.js, Express.js, MongoDB, Nodemon"],
-    gifs: [],
   },
 ];

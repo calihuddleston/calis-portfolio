@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { projectData } from "../projectData.js";
 import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import bunniGif from "../images/bunnigif.png";
-import bunniCover from "../images/bunnicover.png";
-import bunniMenu from "../images/bunnimenu.png";
 
 export default function Portfolio() {
   const [index, setIndex] = useState(0);
@@ -27,9 +24,6 @@ export default function Portfolio() {
   return (
     <div id="projects">
       <div class="blog">
-        <h1 className="title" id="web">
-          Web Development:
-        </h1>
         <div className="title-box">
           <h3 className="title">{project.name}</h3>
         </div>
@@ -39,11 +33,13 @@ export default function Portfolio() {
             <MdOutlineArrowBackIosNew />
           </button>
           <div id="image-column">
-            <img
-              src={project.image}
-              width="85%"
-              className="project-image"
-            ></img>
+            <div className="container">
+              <img
+                src={project.image}
+                width="85%"
+                className="project-image"
+              ></img>
+            </div>
             <div className="intro overlay">
               {project.techUsed}
               <a href={project.repositoryLink}>
@@ -55,31 +51,6 @@ export default function Portfolio() {
           <button onClick={handleClick} className="project-button">
             <MdArrowForwardIos />
           </button>
-        </div>
-        <div id="graphic-design">
-          <h1 className="title" id="graphic">
-            Graphic Design:
-          </h1>
-          <div id="bunnis-kitchen">
-            <h2 className="title" id="bunni-title">
-              Bunni's Kitchen
-            </h2>
-            <div id="bunni-images">
-              <img
-                src={bunniCover}
-                width="575px"
-                className="bunni"
-                id="change-size"
-              ></img>
-              <img
-                src={bunniGif}
-                width="325px"
-                className="bunni"
-                id="change-size"
-              ></img>
-              <img src={bunniMenu} width="250px" className="bunni"></img>
-            </div>
-          </div>
         </div>
       </div>
     </div>

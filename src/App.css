@@ -388,9 +388,9 @@ details {
   flex-direction: column;
   background-color: #282c3458;
   position: relative;
-  bottom: 205px;
+  bottom: 200px;
   padding: 40px;
-  width: 79%;
+  width: 1020px;
 }
 
 .intro:hover{
@@ -403,22 +403,21 @@ details {
   margin-top: 15px;
 }
 
+.container {
+  width: 1100px;
+  height: 600px;
+}
+
 .project-image {
-  position: relative;
-  height: auto;
-  height: 150%;
+  width:  100%;
+  height: 100%;
+  background-size: cover;
+  display: block
 }
 
 #image-row{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#image-column {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -438,39 +437,6 @@ details {
   border-bottom: dotted white 1px;
   font-family: 'Brittany Signature', sans-serif;
   /* width: 100%; */
-}
-
-#graphic-design {
-  margin-top: -170px;
-}
-
-#bunnis-kitchen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: 'Brittany Signature', sans-serif;
-}
-
-#bunni-title {
-  font-family: 'Caladea', sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-   font-size: 2.4em;
-}
-
-#bunni-images{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  left: 120px;
-}
-
-.bunni {
-  margin: 10px;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 /* experience */
